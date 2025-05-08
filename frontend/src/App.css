@@ -1,0 +1,333 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+          /* Add fonts from the app's server 
+@font-face {                
+  font-family: 'FontName';
+  src: url('FontName.woff2') format('woff2');
+} 
+          */                           
+
+          /* ...or hosted services like Google Fonts 
+@import url(//fonts.googleapis.com/css?family=Font+Name);
+          
+
+          @import '../node_modules/modern-normalize/modern-normalize.css';
+           npm install modern-normalize 
+            Resets elements for browser consistancy.  
+            http://nicolasgallagher.com/about-normalize-css/ 
+          */
+
+          /* Component-specific stylesheets, if any 
+@import "component1.css";   
+          */
+
+/*   ----- Variables  -----  
+:root {
+  --custom-color-name:;
+  --custom-embellishment-name:;
+}
+*/
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {       /* Can alternatively define in html {} or :root {} */
+  color:#0A1823;
+  background-color:#1B3E59;
+  font-family:'Geneva', 'Verdana', sans-serif;
+  font-weight: none;
+  font-size: 125%;
+  margin:1%;
+  padding:5%;
+  text-align: center;
+}
+
+/* ----- Anchors ----- Text links */
+a {color: #BF0404}
+a:link {}
+a:hover {color: #E6A82F}
+a:active {color: #BF0404}
+a:visited {color: #0A1823}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+  background-color:#BF0404;
+  color: #0A1823;
+  border: double;
+  font-size: 100%;
+  font-weight: none;
+  padding: 2%;
+  text-decoration: none;
+  margin: 5%;
+  vertical-align: middle;
+}
+nav a {
+  background-color:#E6A82F;
+  color: #0A1823;
+  border: double;
+  font-size: 100%;
+  font-weight: bold;
+  padding: 2%;
+  text-decoration: none;
+  margin: 3%;
+  vertical-align: middle;
+}
+nav a:hover {
+  background-color:#E6A82F;
+  color: #730202;
+  border: double;
+  font-size: 110%;
+  font-weight: bold;
+  padding: 5%;
+  text-decoration: none;
+  margin: 0%;
+  vertical-align: middle;
+}
+nav a:active {
+  background-color:#E6A82F;
+  color:#730202;
+  border: double;
+  border-color: #0A1823;
+  font-size: 110%;
+  font-weight: bold;
+  padding: 5%;
+  text-decoration: none;
+  margin: 0%;
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+  text-align:left;
+  background-color:#E6A82F;
+  color: #0A1823;
+  border: double;
+  font-size: 100%;
+  font-weight: bold;
+  padding: 5%;
+  text-decoration: none;
+  margin: 2%;
+}
+main {
+  background-color:#CCE8E6;
+  color: #0A1823;
+  border: double;
+  padding: 5%;
+}
+section {}
+  article {}
+    #topic1 {}
+    #topic2 {}
+    #gallery1 {}
+    #gallery2 {}
+div {}
+aside {}
+footer {
+  text-align: center;
+  padding: 0%;
+  background-color:#E6A82F;
+  color: #0A1823;
+  border: double;
+  font-size: 75%;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0%;
+}
+
+/*  -----  Typography  ----- */
+p {}
+br {}
+ol, ul, dl {}
+li {}
+dt {}
+dd {}
+
+h1, h2, h3 {  font-family:'Geneva', 'Verdana', sans-serif;} /* Define consistant font family.*/
+h1 {}
+h2 {}
+h3 {}
+
+
+abbr {}
+acronym {}
+address {}
+blockquote {}
+  q {}
+  cite {}
+em {}
+hr {}
+mark {}
+s {}
+span {}
+strong {}
+sub {}
+sup {}
+time {}
+
+/*  ----- Coding or instructional typography ----- */
+pre {}
+code {}
+kbd {}
+samp {}
+var {}
+del {} 
+ins {}
+
+.iconTable{font-size: 150%}
+/*  ----- Table ----- */
+table {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-collapse: collapse;
+    background-color: #CCE8E6;
+    border: inset;
+    padding: 0%;
+}
+caption {
+  font-size: 150%;
+  font-weight: bold;
+  padding: 5%;
+  background-color:#CCE8E6;
+  color: #730202;
+}
+thead {  color: #E6A82F;
+  background-color: #BF0404;}
+tbody {color:#0A1823;}
+tfoot {}
+tr {
+  border-style: inset;
+  padding: 1%;
+  margin: 1%;
+}
+  tr:nth-child(even) {
+    background-color: #A8BDC5;
+  }
+th {
+  border-style: inset;
+  border-color: #1B3E59;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+td {
+  border-style: inset;
+  border-color: #E6A82F;
+  padding: 2%;
+
+}
+  td:nth-child(2) {
+    font-style: italic;
+  }
+  td:nth-child(3) {
+    font-style: italic;
+  }
+  td:nth-child(5) {
+    font-style: italic;
+  }
+colgroup {}
+data {}
+datalist {}
+
+
+/*  ----- Form ----- */
+form {
+  color:#0A1823;
+  background-color:#A8BDC5;
+  font-family:'Geneva', 'Verdana', sans-serif;
+  font-size: 100%;
+  margin:1%;
+  padding:2%;
+  display: block;
+}
+fieldset {}
+  legend {    
+    font-family: 'Geneva', 'Verdana', sans-serif;
+    font-size: 100%;
+    color: #BF0404;
+    font-weight: bold;
+  }
+label {    
+  font-family: 'Geneva', 'Verdana', sans-serif;
+  font-size: 100%;
+  padding: 2%;
+  display: block;
+}
+  button {
+    font-family: 'Geneva', 'Verdana', sans-serif;
+    font-size: 100%;
+    background-color: #E6A82F;
+    color:#0E3744;
+    margin:1%;
+    padding:3%;
+    text-align: center;
+  }
+  input {
+    color:#0E3744;
+    background-color:#CCE8E6;
+    font-family:'Geneva', 'Verdana', sans-serif;
+    font-size: 125%;
+    margin:1%;
+    padding:2%;
+    text-align: center;
+  }
+  output {}
+  meter {}
+  progress {}
+  select {
+    color:#0E3744;
+    background-color:#CCE8E6;
+    font-family:'Geneva', 'Verdana', sans-serif;
+    font-size: 125%;
+    margin:1%;
+    padding:2%;
+    text-align: center;
+  }
+    optgroup {}
+    option {}
+  textarea {}
+
+/* ----- Media ----- */
+figure {}
+  figcaption {}
+img {}
+svg {}
+picture {}
+  source {}
+iframe {}
+video {}
+audio {}
+embed {}
+object {}
+
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.floatright {}
+.floatleft {}
+.center-middle {}
+
+.ten {}
+.twenty {}
+.thirty {}
+.forty {}
+.fifty {}
+.sixty {}
+.seventy {}
+.eighty {}
+
+.radius {}
+.circle {}
+.boxshadow {}
+.tshadow {} 
+.gradient {}
+.shape {}
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
